@@ -11,8 +11,8 @@ $(document).ready(() => {
         $(".project-area .grid").isotope({
             filter: selector
         })
-    }
-    )
-    return false;
+        return false;
+    })
+    $(".project-area .button-group #button1").trigger("click")
 }
 )
