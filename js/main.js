@@ -4,7 +4,6 @@ $(document).ready(() => {
 
     $buttons.click((event) => {
         $(".project-area .button-group button").removeClass("active");
-        console.log($(".project-area .button-group button"))
         event.target.classList.add("active")
 
         let selector = $(event.target).attr("data-filter");
@@ -14,5 +13,11 @@ $(document).ready(() => {
         return false;
     })
     $(".project-area .button-group #button1").trigger("click")
+
+
+    console.log($(".project-area .grid .test-popup-link"))
+    $(".project-area .grid .test-popup-link").magnificPopup({
+        type: 'image',
+    });
 }
 )
