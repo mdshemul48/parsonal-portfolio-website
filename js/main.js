@@ -15,9 +15,25 @@ $(document).ready(() => {
     $(".project-area .button-group #button1").trigger("click")
 
 
-    console.log($(".project-area .grid .test-popup-link"))
     $(".project-area .grid .test-popup-link").magnificPopup({
         type: 'image',
+        gallery: { enabled: true }
     });
+
+    // owl-carousel
+    $(".site-main .client-about-area .owl-carousel").owlCarousel(
+        {
+            loop: true, autoplay: true, dots: true, responsive: {
+                0: {
+                    items: 1
+                },
+                544: {
+                    items: 2
+                }
+
+            }
+        }
+    )
+
 }
 )
