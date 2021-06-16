@@ -176,6 +176,13 @@
 }
 
 .site-main .services-area .services {
-  background: rgba();
+  background: rgba(248, 252, 253, 0.973);
+  padding: 2rem 0;
+  width: 16rem;
+  margin: 5rem 0.5rem;
+  transition: box-shadow 0.7s ease;
+}
+.site-main .services-area .services:hover {
+  box-shadow: var(--box-shadow);
 }
 /* end services area */
